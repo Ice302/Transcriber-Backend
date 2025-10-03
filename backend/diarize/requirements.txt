@@ -1,6 +1,6 @@
 gunicorn==23.0.0
 packaging==25.0
-faster_whisper==20240615
+faster_whisper
 numpy==1.26.4
 torch==2.2.0
 torchaudio==2.2.0
