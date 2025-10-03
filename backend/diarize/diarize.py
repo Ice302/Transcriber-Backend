@@ -1,6 +1,7 @@
 import sys
 import json
 import tempfile
+import os
 from fastapi import FastAPI, UploadFile, File
 from pyannote.audio import Pipeline
 import uvicorn
@@ -52,4 +53,6 @@ if __name__ == "__main__":
         diarize_file(sys.argv[1])
     else:
         # Run as FastAPI service
-         uvicorn.run(app, host="0.0.0.0", port=8000)
+        port = int(os.environ.get("PORT", 8000))  # 👈 use Render's assigned port
+        uvicorn.run(app, host="0.0.0.0", port=port)
+
