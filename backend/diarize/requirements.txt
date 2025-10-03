@@ -2,8 +2,8 @@ gunicorn
 packaging
 faster_whisper
 numpy
-torch==2.4.0+cpu
-torchaudio==2.4.0+cpu
+torch==2.8.0+cpu
+torchaudio==2.8.0+cpu
 --extra-index-url https://download.pytorch.org/whl/cpu
 transformers
 ffmpeg-python
