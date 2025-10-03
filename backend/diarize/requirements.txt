@@ -2,19 +2,19 @@ gunicorn
 packaging
 faster_whisper
 numpy
-torch
-torchaudio
+torch==2.4.0+cpu
+torchaudio==2.4.0+cpu
+--extra-index-url https://download.pytorch.org/whl/cpu
 transformers
 ffmpeg-python
 librosa
 scipy
 scikit-learn
-pyannote.audio
+pyannote.audio==3.1.1
 pyannote.core
 pyannote.metrics
 pyannote.pipeline
 pyyaml
 tqdm
-render
 fastapi
 uvicorn
