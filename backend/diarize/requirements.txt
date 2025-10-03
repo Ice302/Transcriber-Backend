@@ -8,7 +8,7 @@ transformers
 ffmpeg-python
 librosa
 scipy
-sklearn
+scikit-learn
 pyannote.audio
 pyannote.core
 pyannote.metrics
